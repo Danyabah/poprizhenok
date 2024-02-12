@@ -1,10 +1,17 @@
 # консоль диспетчера пакетов
+```
 Scaffold-DbContext 'Server=DESKTOP-URICGBM\SQLEXPRESS;Database=Tour;Trusted_Connection=True;' Microsoft.EntityFrameworkCore.SqlServer
+```
 # entityCore + (Tools,SqlServer)
+```
 #googs.wsr.ru login + password
+```
 # connection string
+```
 "Data Source=gogs.wsr.ru;Initial Catalog=Popryzhenok;User ID=190-20;Password=8XBEkuQX;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False;App=EntityFramework"
+```
 # Логин
+```
 public int user { get; set; }
 private void button1_Click(object sender, EventArgs e)
 {
@@ -39,7 +46,9 @@ private void button1_Click(object sender, EventArgs e)
         }
     }
 }
+```
 # userControl
+```
 public UserControl1(Product product)
 {
     InitializeComponent();
@@ -62,8 +71,9 @@ public void Init(Product product)
         }
     }
 }
+```
 # formLayout
-
+```
 public Form2()
 {
     InitializeComponent();
@@ -109,7 +119,9 @@ private void Filter()
     }
 
 }
+```
 # БД
+```
 CREATE TABLE Products(
  id int identity (1,1) not null,
  productName nvarchar(80),
@@ -122,3 +134,4 @@ CREATE TABLE Products(
  FOREIGN KEY (productTypeId) REFERENCES ProductType(id) 
 )
 UPDATE [ProductOfAgents] SET [idAgent] = (SELECT Agents.id FROM Agents WHERE Agents.agentName = ProductOfAgents.idAgent)
+```
