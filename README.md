@@ -66,7 +66,7 @@ public void Init(Product product)
 
         if(product.Logo != "") 
         { 
-           var path = "C:\\Users\\Alex_Sh\\source\\repos\\poh\\poh\\Resources\\" + product.Logo;
+            var path = AppDomain.CurrentDomain.BaseDirectory + "\\Resources" + agent.Logo;
             pictureBox1.Image = Image.FromFile(path);
         }
     }
