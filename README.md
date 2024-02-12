@@ -66,7 +66,7 @@ public void Init(Product product)
 
         if(product.Logo != "") 
         { 
-            var path = AppDomain.CurrentDomain.BaseDirectory + "\\Resources" + agent.Logo;
+            var path = AppDomain.CurrentDomain.BaseDirectory + "\\Resources" + product.Logo;
             pictureBox1.Image = Image.FromFile(path);
         }
     }
